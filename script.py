@@ -121,7 +121,6 @@ total_sales = 0
 # Append transaction parts to objects
 for transaction in daily_transactions:
   
-    # Strip newlines/whitespaces and split at |
     transaction_parts = [part.strip().replace("\n", "") for part in transaction.split('|')]
     
     if len(transaction_parts) < 3:
